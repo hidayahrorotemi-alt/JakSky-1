@@ -1130,11 +1130,13 @@ function keluarWeb(){
   window.location.href="https://google.com";
 }
 
-window.addEventListener("load",()=>{
-  if(localStorage.getItem("ageOk")==="yes"){
-    document.getElementById("agePopup").style.display="none";
-  }
-});
+function masukWeb(){
+  document.getElementById("agePopup").style.display="none";
+}
+
+function keluarWeb(){
+  window.location.href="https://google.com";
+}
 </script>
 <div id="agePopup" class="ageOverlay">
   <div class="ageBox">
