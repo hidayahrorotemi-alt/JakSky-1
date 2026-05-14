@@ -1729,3 +1729,44 @@ html{
   box-shadow:0 20px 60px rgba(0,0,0,.35);
   animation: agePop .3s ease;
 }
+.commentBox{
+  background:#f9f1f6;
+  padding:14px;
+  border-radius:18px;
+}
+
+.commentItem{
+  margin-bottom:12px;
+  padding-left:10px;
+  border-left:2px solid #ff6ec7;
+  background:rgba(255,255,255,.6);
+border-radius:12px;
+padding:10px;
+}
+
+.commentName{
+  font-weight:700;
+  font-size:14px;
+}
+
+.commentText{
+  font-size:14px;
+  color:#444;
+  margin:4px 0;
+}
+
+.replyBtn{
+  background:#eee;
+  border:0;
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:12px;
+  cursor:pointer;
+  transition:.2s; /* ⬅️ PINDAH KE SINI */
+}
+
+.replyBtn:hover{
+  background:#ff2e8a;
+  color:white;
+}
+}
