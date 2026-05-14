@@ -1120,6 +1120,20 @@ setInterval(function(){
     refreshActiveFromData();
   });
 },7000);
+  function masukWeb(){
+  document.getElementById("agePopup").style.display="none";
+  localStorage.setItem("ageOk","yes");
+}
+
+function keluarWeb(){
+  window.location.href="https://google.com";
+}
+
+window.addEventListener("load",()=>{
+  if(localStorage.getItem("ageOk")==="yes"){
+    document.getElementById("agePopup").style.display="none";
+  }
+});
 </script>
 
 </body>
