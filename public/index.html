@@ -1135,6 +1135,35 @@ window.addEventListener("load",()=>{
   }
 });
 </script>
+<div id="agePopup" class="ageOverlay">
+  <div class="ageBox">
+    <span class="closeX" onclick="masukWeb()">✕</span>
 
+    <div class="ageIcon">⚠️</div>
+    <h2>Peringatan Konten 18+</h2>
+
+    <p>
+      Website ini berisi konten khusus dewasa.<br>
+      Semua konten hanya untuk hiburan.
+    </p>
+
+    <div class="ageWarn">
+      Jangan meniru apa pun yang ada di dalam video.
+    </div>
+
+    <p>
+      Dengan melanjutkan, kamu menyatakan sudah cukup umur
+      dan bertanggung jawab atas tindakanmu sendiri.
+    </p>
+
+    <button class="ageEnter" onclick="masukWeb()">
+      Saya Mengerti & Masuk
+    </button>
+
+    <button class="ageExit" onclick="keluarWeb()">
+      Keluar
+    </button>
+  </div>
+</div>
 </body>
 </html>
