@@ -416,21 +416,41 @@ button{
   color:white!important;
 }
 
-/* ===== COMMENT ===== */
+/* ===== COMMENT CLEAN FINAL ===== */
 .comment{
-  background:#fff5fb;
+  background:#fff7fc;
   border-left:4px solid #ff2e8a;
-  padding:10px;
-  border-radius:12px;
-  margin:8px 0;
+  padding:14px;
+  border-radius:18px;
+  margin:12px 0;
+  box-shadow:none;
+}
+
+.comment .comment{
+  margin-left:0!important;
 }
 
 .adminReplyShow{
-  background:#ffe3f3;
+  background:#ffe2f1;
   border-left:4px solid #2ea8ff;
-  padding:8px;
-  border-radius:10px;
-  margin-top:6px;
+  padding:12px;
+  border-radius:14px;
+  margin-top:10px;
+  margin-left:10px;
+  box-shadow:none;
+}
+
+.adminReplyShow .adminReplyShow{
+  margin-left:0!important;
+}
+
+.comment p,
+.adminReplyShow p{
+  margin:6px 0;
+}
+
+.comment button{
+  margin-top:8px;
 }
 
 .verifyBadge{
