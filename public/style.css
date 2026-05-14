@@ -1622,3 +1622,89 @@ html{
   background:#fff8dc;
   border-left:4px solid gold;
 }
+/* ===== AGE WARNING POPUP FINAL ===== */
+.ageOverlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.72);
+  backdrop-filter:blur(8px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:99999;
+  padding:18px;
+}
+
+.ageBox{
+  position:relative;
+  width:100%;
+  max-width:390px;
+  background:linear-gradient(180deg,#fff,#fff1f7);
+  border:2px solid #ff5bad;
+  border-radius:26px;
+  padding:26px 24px 24px;
+  text-align:center;
+  box-shadow:0 25px 70px #0008;
+  animation:agePop .28s ease;
+}
+
+.closeX{
+  position:absolute;
+  top:10px;
+  right:14px;
+  font-size:22px;
+  font-weight:900;
+  cursor:pointer;
+  color:#999;
+}
+
+.closeX:hover{color:#ff2e8a}
+
+.ageIcon{
+  font-size:44px;
+  margin-bottom:8px;
+}
+
+.ageBox h2{
+  margin:5px 0 10px;
+  color:#ff2e8a;
+}
+
+.ageBox p{
+  font-size:14px;
+  line-height:1.55;
+  color:#333;
+}
+
+.ageWarn{
+  background:#ffe0ef;
+  border-radius:16px;
+  padding:10px;
+  margin:14px 0;
+  font-weight:900;
+  color:#d6005b;
+}
+
+.ageBox button{
+  width:100%;
+  padding:13px;
+  border:0;
+  border-radius:999px;
+  margin-top:8px;
+  font-weight:900;
+}
+
+.ageEnter{
+  background:#ff2e8a;
+  color:white;
+}
+
+.ageExit{
+  background:#e5e7eb;
+  color:#333;
+}
+
+@keyframes agePop{
+  from{transform:scale(.85);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
