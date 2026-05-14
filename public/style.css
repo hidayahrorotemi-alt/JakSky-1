@@ -1709,12 +1709,23 @@ html{
   to{transform:scale(1);opacity:1}
 }
 .ageImage{
-  width:110px;
-  height:110px;
-  object-fit:cover;
-  border-radius:50%;
-  margin:10px auto;
-  display:block;
+  width:110px !important;
+  height:110px !important;
+  object-fit:cover !important;
+  border-radius:50% !important;
+  margin:10px auto !important;
+  display:block !important;
   border:4px solid #ffe1ef;
   box-shadow:0 8px 25px rgba(255,46,138,.25);
+}
+.ageBox{
+  position:relative;
+  width:100%;
+  max-width:360px;
+  background:linear-gradient(180deg,#ffffff,#fff0f6);
+  border-radius:26px;
+  padding:24px 20px;
+  text-align:center;
+  box-shadow:0 20px 60px rgba(0,0,0,.35);
+  animation: agePop .3s ease;
 }
